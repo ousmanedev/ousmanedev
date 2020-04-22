@@ -1,0 +1,16 @@
+baseURL = "https://ousmane.dev"
+languageCode = "en-us"
+title = "Rahmane Ousmane"
+
+theme = "hyde"
+
+[Menus]
+  main = [
+      {Name = "ousmanedev@gmail.com", URL="mailto:ousmanedev@gmail.com"},
+      {Name = "Github", URL = "https://github.com/ousmanedev/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/rahmaneousmane/"}
+  ]
+
+[params]
+  description = "SWE @ Veepee. I blog about web development, devops and ML"
+  themeColor = "theme-base-08"
