@@ -70,6 +70,12 @@ html {
   }
 }
 
+/* Sidebar image */
+
+.sidebar img {
+  margin: auto;
+}
+
 /* Sidebar links */
 .sidebar a {
   color: #fff;
