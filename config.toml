@@ -8,7 +8,7 @@ theme = "hyde"
   main = [
       {Name = "ousmanedev@gmail.com", URL="mailto:ousmanedev@gmail.com"},
       {Name = "Github", URL = "https://github.com/ousmanedev/"},
-      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/rahmaneousmane/"}
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/ousmanedev/"}
   ]
 
 [params]
