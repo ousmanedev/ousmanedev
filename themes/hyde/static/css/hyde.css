@@ -72,8 +72,8 @@ html {
 
 /* Sidebar image */
 
-.sidebar img {
-  margin: auto;
+.sidebar {
+  text-align: center;
 }
 
 /* Sidebar links */
