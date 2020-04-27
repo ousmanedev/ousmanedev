@@ -3,7 +3,7 @@ title: "Writing your own ORM in Ruby"
 date: "2019-08-24"
 ---
 
-_TLDR: https://github.com/ousmanedev/lite\_record_
+TLDR: https://github.com/ousmanedev/lite_record
 
 In this post, we're going to write a basic [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) (Object-Relational Mapper) in Ruby. If you don't know what an ORM is, or never used one before, I recommend reading this [article](https://blog.bitsrc.io/what-is-an-orm-and-why-you-should-use-it-b2b6f75f5e2a) before. Our ORM will implement the [Active Record](https://en.wikipedia.org/wiki/Active_record_pattern) pattern. This post assumes you know about Ruby, Gems, Bundler and SQL.
 
