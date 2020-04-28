@@ -1,5 +1,5 @@
 ---
-title: "TAXE PAS MES MOs"
+title: "TAXE PAS MES MOs (in French)"
 date: "2018-09-20"
 coverImage: "resist.png"
 ---
