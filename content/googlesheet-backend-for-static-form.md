@@ -58,12 +58,25 @@ This is a very interresting part.
 ## Submit your google form through your static form
 When someone submits our static form, we need to internally submit the google form with the same data, so that the informations can be saved in our google sheet.
 
-Here's the 
+We can submit a google form in one click, by calling its direct submit URL
+A Google form direct submit URL is in the form: `https://docs.google.com/forms/d/e/FORMID/formResponse?&[entry.number=value]&submit=SUBMIT`.
+We're going to call this url when our static form is submitted, by replacing the default values with our static form data.
 
-```
-function submitGoogleForm(link) {
-  xhr.send(
+You can see that the submit url is very similar to the prefill one. Let's tweak our prefill URL to get a submit URL.
 
-  )
-}
-```
+In the prefill URL, replace `viewform?usp=pp_url` by `formResponse?` and then append `submit=SUBMIT` at the end of the url.
+
+Now, let's supply our form data. If a user enters first_name = 'John', last name = 'Doe', our form action url will be:
+`https://docs.google.com/forms/d/e/FORMID/formResponse?&entry.number=John&entry.number=Doe&submit=SUBMIT`.
+
+Below is a full working example:
+{{< gist ousmanedev d9040faf287a7affdff064f8c83f5f4c >}}
+
+In this example, we use javascript `fetch` API, to submit the google form with the same data in our static form.
+
+Now you can head to your google form or google sheet to see the responses.
+
+Happy Hacking
+
+#### References
+- https://gist.github.com/unforswearing/7b01591138c7d3ca27f1b50182573233
