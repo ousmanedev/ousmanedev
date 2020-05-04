@@ -1,7 +1,6 @@
 ---
 title: "Submit static forms to Google Sheet: The Easy Way"
 date: 2020-05-03T23:38:14+02:00
-draft: true
 ---
 
 When building static sites, you may not want to implement a backend for handling your form submissions.
