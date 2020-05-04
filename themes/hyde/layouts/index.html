@@ -1,4 +1,52 @@
 {{ define "main" -}}
+<form data-gf-url="https://docs.google.com/forms/d/e/1FAIpQLSeXkl1Vlhu4wVe2qddBkaMKDcYoys1JwXMUp471EMpVUTpiQw/viewform?usp=pp_url&entry.1535671172=first_name&entry.254197705=last_name
+">
+   <div>
+     <label for="first_name"> First Name </label>
+     <input type="text" name="first_name"/>
+   </div>
+
+   <div>
+     <label for="last_name"> Last Name </label>
+     <input type="text" name="last_name"/>
+   </div>
+   <input type = "submit"/>
+ </form>
+
+<script type="text/javascript">
+ window.addEventListener( "load", function () {
+   const form = document.querySelector("form");
+   
+   form.addEventListener( "submit", function ( event ) {
+     event.preventDefault();
+     sendData();
+   } );
+    
+   function sendData() {
+     const XHR = new XMLHttpRequest(),
+           FD = new FormData(form);
+
+     XHR.addEventListener( "load", function(event) {
+       alert( 'Informations successfully sent.' );
+     } );
+
+     XHR.addEventListener( "error", function( event ) {
+       alert( 'Oops! Something went wrong.' );
+     } );
+
+
+     let gfUrl = form.dataset.gfUrl
+     gfUrl = gfUrl.replace('viewform?usp=pp_url', 'formResponse');
+     for(let [key, value] of FD) {
+       gfUrl = gfUrl.replace(key, value);
+     }
+
+     XHR.open("GET", gfUrl);
+     XHR.send();
+   }
+ } );
+</script>
+
 <div class="posts">
 {{ range .Site.RegularPages -}}
 <article class="post">
