@@ -12,5 +12,5 @@ theme = "hyde"
   ]
 
 [params]
-  description = "SWE @ Veepee, from Paris. I blog about web development."
+  description = "SWE @ Veepee. Live in Paris. I blog about web development."
   themeColor = "theme-base-08"
