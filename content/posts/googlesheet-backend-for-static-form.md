@@ -6,10 +6,7 @@ date: 2020-05-03T23:38:14+02:00
 When building static sites, you may not want to implement a backend for handling your form submissions.
 Google sheet are a great way to store/use that data.
 
-Here, I'm going to show you how to send your data, directy into a google sheet via a google form, in just 3 steps.
-- [Write a static form](#)
-- [Setup a google form](#)
-- [Submit your google form through your static form](#)
+Here, I'm going to show you how to send your data, directy into a google sheet via a google form.
 
 ## Write a static form
 Let's build a simple form, that we will use through this article.
