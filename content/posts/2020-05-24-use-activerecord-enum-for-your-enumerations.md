@@ -5,7 +5,7 @@ date: 2020-05-24T15:43:13+02:00
 I've recently started working on a rails codebase, where I noticed something quite interresting.
 
 Let's say we have a model called `Post`. A post can either be `draft` or `published`. This data is saved in the `status` column.  
-In programming, we say that `status` is an [enumeration](https://en.wikipedia.org/wiki/Enumerated_type), because it has a finite number of possible values.
+In programming, we say that `status` is an [enumeration](https://en.wikipedia.org/wiki/Enumerated_type), because it has a finite number of possible values  (draft and published).
 
 In this post, I'll try to show you what is wrong with the way post status is handled in that codebase, and how we can do better using [ActiveRecord::Enum](https://guides.rubyonrails.org/active_record_querying.html#enums)
 
